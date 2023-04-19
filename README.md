@@ -11,7 +11,7 @@ Chirp is an awesome application that offers a lot of features. With Chirp, you c
 
 
 ## How to use?
-This tool allows you to dump the UV-5R memory and upload an image file back to the radio. With this too alone you can't actually make any changes to your settings. However, since the dumped images are compatible with the Chirp, you can do this instead:
+This tool allows you to dump the UV-5R memory and upload an image file back to the radio. With this too alone you can't actually make any changes to your settings. However, since the dumped images are compatible with the Chirp file format, you can do this instead:
 * Dump the memory of your Baofeng BFB298 using uv5rtool
 * Open the dumped file in Chirp and make whatever settings you want, then save the chnages
 * Use uv5rtool to upload the edited image back to your radio
@@ -83,4 +83,4 @@ You can of course use the prebuilt version as well.
 
 
 ## Disclaimer
-This tool is provided as is. Although I tested it as much as I could and it seems to function properly, use on your own risk. **My recommendation is to use this for version BFB298 only, and use Chirp for any other versions or radios.** DO NOT USE with any other radio except UV-5R! This tool has been tested on Baofeng UV-5R version BFB297 and BFB298 only!
+This tool is provided as is. Although I tested it as much as I could and it seems to function properly, use on your own risk. **My recommendation is to use this for version BFB298 only, and use Chirp for any other versions or radios.** DO NOT USE with any other radio except the UV-5R! This tool has been tested on Baofeng UV-5R version BFB297 and BFB298 only!
