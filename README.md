@@ -34,10 +34,11 @@ or
 
 `uv5rtool --port COM5 --file image.img --mode dump`
 
-or just (this defaults to mode *dump* and file name *dump.img*):
+or just:
 
 `uv5rtool --port COM5`
-
+(this defaults to mode *dump* and file name *dump.img*)
+ 
 Upload image:
 
 `uv5rtool -p COM5 -f image.img -m upload`
@@ -46,29 +47,53 @@ or
 
 `uv5rtool --port COM5 --file image.img --mode upload`
 
-**On MacOS or Linux**
+**On Linux**
 
 Dump (download) image:
 
-`uv5rtool -p /dev/ttyUSB0 -f image.img -m dump`
+`./uv5rtool -p /dev/ttyUSB0 -f image.img -m dump`
 
 or
 
-`uv5rtool --port /dev/ttyUSB0 --file image.img --mode dump`
+`./uv5rtool --port /dev/ttyUSB0 --file image.img --mode dump`
 
-or just (this defaults to mode *dump* and file name *dump.img*):
+or just:
 
-`uv5rtool --port /dev/ttyUSB0`
+`./uv5rtool --port /dev/ttyUSB0`
+(this defaults to mode *dump* and file name *dump.img*)
+ 
+Upload image:
+
+`./uv5rtool -p /dev/ttyUSB0 -f image.img -m upload`
+
+or
+
+`./uv5rtool --port /dev/ttyUSB0 --file image.img --mode upload`
+
+**On MacOS**
+
+Dump (download) image:
+
+`./uv5rtool -p /dev/tty.usbserial-1410 -f image.img -m dump`
+
+or
+
+`./uv5rtool --port /dev/tty.usbserial-1410 --file image.img --mode dump`
+
+or just:
+
+`./uv5rtool --port /dev/tty.usbserial-1410`
+(this defaults to mode *dump* and file name *dump.img*)
 
 Upload image:
 
-`uv5rtool -p /dev/ttyUSB0 -f image.img -m upload`
+`./uv5rtool -p /dev/tty.usbserial-1410 -f image.img -m upload`
 
 or
 
-`uv5rtool --port /dev/ttyUSB0 --file image.img --mode upload`
+`./uv5rtool --port /dev/tty.usbserial-1410 --file image.img --mode upload`
 
-So the only difference is the way you specify the COM port. Of course, replace COM5 or /dev/ttyUSB0 with whatever port your programming cable is connected to. You can get that from Chirp.
+So the only difference is the way you specify the COM port. Of course, replace COM5, /dev/ttyUSB0 or /dev/tty.usbserial-1410 with whatever port your programming cable is connected to. You can get that from Chirp.
 
 On any OS you can use:
 `uv5rtool --help`
