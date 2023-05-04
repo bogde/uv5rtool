@@ -10,6 +10,10 @@ This tool downloads and uploads the memory of Baofeng UV-5R radios. It allows us
 Chirp is an awesome application that offers a lot of features. With Chirp, you can not only back up your settings but also configure your radio. I've used Chirp successfully with my Baofeng radio version BFB297. However, when I got a new UV-5R version BFB298, Chirp (until at least version 20230418) couldn't upload a complete image to the radio and caused it to lose everything in the AUX memory area. After that, Chirp couldn't open the Other settings area, and the radio started behaving strangely. The problem is most likely caused by the firmware in the new BFB298 version. Therefore, I created this tool after experimenting a bit, which can both download and upload complete images to the UV-5R. I've tested the tool with multiple UV-5Rs BFB298 and it seems to work correctly.
 
 
+## Does this always happen?
+It looks like only some radios are affected. I recently got another BFB298 which doesn't have this issue.
+
+
 ## How to use?
 This tool allows you to dump the UV-5R memory and upload an image file back to the radio. With this tool alone you can't actually make any changes to your settings. However, since the dumped images are compatible with the Chirp file format, you can do this instead:
 * Dump the memory of your Baofeng BFB298 using uv5rtool
@@ -105,6 +109,12 @@ On any OS you can use:
 * Do `cargo build --release`
 
 You can of course use the prebuilt version as well.
+
+
+## Support
+If you want to support my work, feel free to
+
+<a href="https://www.buymeacoffee.com/bogde" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 
 ## Disclaimer
